@@ -14,6 +14,8 @@ export interface ICard {
     inputtitle2?: string;
     request: boolean;
     sign: boolean;
+    text?: string;
+    route?: string
 }
 
 export interface Iinput {

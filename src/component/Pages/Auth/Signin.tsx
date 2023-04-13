@@ -7,7 +7,7 @@ const Signin = () => {
       <div>
           <Container>
               <Card
-                 inputtitle1=''
+                 inputtitle1='Sign in'
                   inputtitle2=''
                   sign={false}
                   request={true}
