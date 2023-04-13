@@ -26,7 +26,7 @@ const Card: React.FC<ICard> = ({inputtitle, buttontitle, onClick, inputtitle1, i
           />
 
 
-          <Context >{text}, <NavLink to="/">
+          <Context >Already have an account, <NavLink to="/Signin">
               <span>Create one</span>
           </NavLink></Context>
 
