@@ -2,9 +2,9 @@ import React from 'react'
 import styled from "styled-components"
 import { IButton } from './Types'
 
-const Button: React.FC<IButton> = ({buttontitle, c, bg}) => {
+const Button: React.FC<IButton> = ({buttontitle, c, bg, onClick}) => {
   return (
-    <Container bg="red" c="black">
+    <Container onClick={onClick} bg="red" c="black">
       <Text>{buttontitle}</Text>
     </Container>
   )
