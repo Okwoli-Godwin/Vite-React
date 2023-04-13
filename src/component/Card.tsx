@@ -9,12 +9,6 @@ const Card: React.FC<ICard> = ({title, buttontitle, onClick}) => {
       <Container>
           <Text>{title}</Text>
           <Inout title="name" />
-          <br />
-          <br />
-          <Inout title="Email" />
-          <br />
-          <br />
-          <Inout title="Password"/>
 
           <Button
               buttontitle="Signup"

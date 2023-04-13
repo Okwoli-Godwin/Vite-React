@@ -12,7 +12,6 @@ const Inout: React.FC<Iinput> = ({title}) => {
               <Form>
                   <Input placeholder={title} />
                   {sign ? <Input placeholder={title} /> : null}
-                  {sign ? <Input placeholder={title} /> : null}
               </Form>
           </Field>
     </div>
