@@ -4,11 +4,17 @@ import { ICard } from './Types'
 import Inout from './Inout'
 import Button from './Button'
 
-const Card: React.FC<ICard> = ({title, buttontitle, onClick}) => {
+const Card: React.FC<ICard> = ({inputtitle, buttontitle, onClick, inputtitle1, inputtitle2}) => {
   return (
       <Container>
-          <Text>{title}</Text>
-          <Inout title="password" sign={true} request={false} title1="Email" title2="name"/>
+          <Text>{inputtitle}</Text>
+          <Inout
+              title={inputtitle}
+              sign={true}
+              request={true}
+              title2={inputtitle2}
+              title1={inputtitle1}
+          />
 
           <Button
               buttontitle="Signup"

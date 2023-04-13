@@ -6,7 +6,15 @@ const Register = () => {
   return (
       <div>
           <Container>
-              <Card buttontitle='Sign up' title='Register' onClick={() => {
+              <Card
+                  inputtitle1='Password'
+                  inputtitle2='Email'
+                  sign={true}
+                  request={true}
+                  buttontitle='Sign up'
+                  title='Register'
+                  inputtitle='Email'
+                  onClick={() => {
                   console.log("me")
               }}/>
           </Container>
