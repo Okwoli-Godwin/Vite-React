@@ -15,6 +15,7 @@ export interface ICard {
     request: boolean;
     sign: boolean;
     text?: string;
+    path?: string;
     route?: string
 }
 

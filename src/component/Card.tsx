@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import { ICard } from './Types'
 import Inout from './Inout'
 import Button from './Button'
+import {NavLink} from "react-router-dom"
 
-const Card: React.FC<ICard> = ({inputtitle, buttontitle, onClick, inputtitle1, inputtitle2}) => {
+const Card: React.FC<ICard> = ({inputtitle, buttontitle, onClick, inputtitle1, inputtitle2, text, route}) => {
   return (
       <Container>
           <Text>{inputtitle}</Text>
@@ -14,6 +15,7 @@ const Card: React.FC<ICard> = ({inputtitle, buttontitle, onClick, inputtitle1, i
               request={true}
               title2={inputtitle2}
               title1={inputtitle1}
+
           />
 
           <Button
@@ -22,6 +24,12 @@ const Card: React.FC<ICard> = ({inputtitle, buttontitle, onClick, inputtitle1, i
               bg="red"
               onClick={onClick}
           />
+
+
+          <Context >{text}, <NavLink to="/">
+              <span>Create one</span>
+          </NavLink></Context>
+
     </Container>
   )
 }
@@ -54,6 +62,20 @@ const Text = styled.div`
     font-weight: 500;
     text-transform: uppercase;
     font-size: 40px;
+    
+`
+const Context = styled.div`
+    display: flex;
+    margin-top: 20px;
+
+    span{
+        margin-left: 30px;
+        font-weight: bold;
+        :hover{
+            cursor: pointer;
+            transform: scale(100%);
+        }
+    }
 `
 
 const Container = styled.div`

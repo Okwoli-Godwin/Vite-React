@@ -16,7 +16,8 @@ const Signin = () => {
                   inputtitle='Email'
                   onClick={() => {
                   console.log("me")
-              }}/>
+                  }} />
+              
           </Container>
     </div>
   )
