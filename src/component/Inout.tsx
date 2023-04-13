@@ -3,11 +3,16 @@ import styled from 'styled-components'
 import { Iinput } from './Types'
 
 const Inout: React.FC<Iinput> = ({title}) => {
+
+    const [sign, setSign] = React.useState(false)
+    const [request, setRequest] = React.useState(false)
   return (
       <div>
           <Field>
               <Form>
                   <Input placeholder={title} />
+                  {sign ? <Input placeholder={title} /> : null}
+                  {sign ? <Input placeholder={title} /> : null}
               </Form>
           </Field>
     </div>
