@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Iinput } from './Types'
 
-const Inout: React.FC<Iinput> = ({title, sign, request}) => {
+const Inout: React.FC<Iinput> = ({title, title1, title2, sign, request}) => {
 
 
   return (
@@ -10,8 +10,8 @@ const Inout: React.FC<Iinput> = ({title, sign, request}) => {
           <Field>
               <Form>
                   <Input placeholder={title} />
-                  {sign ? <Input placeholder={title} /> : null}
-                  {request ? <Input placeholder={title} /> : null}
+                  {sign ? <Input placeholder={title1} /> : null}
+                  {request ? <Input placeholder={title2} /> : null}
               </Form>
           </Field>
     </div>
@@ -36,6 +36,7 @@ const Input = styled.input`
     outline: none;
     width: 300px;
     background-color: beige;
+    margin: 20px;
 `
 const Field = styled.div`
     display: flex;

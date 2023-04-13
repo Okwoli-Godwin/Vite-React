@@ -8,7 +8,7 @@ const Card: React.FC<ICard> = ({title, buttontitle, onClick}) => {
   return (
       <Container>
           <Text>{title}</Text>
-          <Inout title="name" sign={true} request={false} />
+          <Inout title="password" sign={true} request={false} title1="Email" title2="name"/>
 
           <Button
               buttontitle="Signup"

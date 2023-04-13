@@ -13,8 +13,8 @@ export interface ICard {
 
 export interface Iinput {
     title: string;
-    title1: string;
-    title2: string;
+    title1?: string;
+    title2?: string;
     request: boolean;
     sign: boolean;
 }
