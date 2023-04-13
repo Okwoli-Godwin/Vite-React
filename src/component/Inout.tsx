@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { Iinput } from './Types'
 
-const Inout: React.FC<Iinput> = ({title}) => {
+const Inout: React.FC<Iinput> = ({title, sign, request}) => {
 
-    const [sign, setSign] = React.useState(false)
-    const [request, setRequest] = React.useState(false)
+
   return (
       <div>
           <Field>
               <Form>
                   <Input placeholder={title} />
                   {sign ? <Input placeholder={title} /> : null}
+                  {request ? <Input placeholder={title} /> : null}
               </Form>
           </Field>
     </div>
